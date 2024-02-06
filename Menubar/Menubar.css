@@ -1,0 +1,220 @@
+.rdt-menu-e {
+    position: absolute;
+  }
+  .rdt-menu-1-e{
+    top: 15px;
+    right: 20px;
+    width: 95%;
+  }
+
+  .rdt-menu-1-e label{
+    padding-bottom: 24px !important;
+  }
+  
+  .rdt-menu-e ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display:none;
+    background: #ff5700;
+    /* width: 415px; */
+  }
+  .rdt-men-e ul li{
+    border-top: 1px solid rgba(255, 255, 255, 0.075);
+  }
+  .add-icon{
+    float: right;
+  }
+  .rdt-menu-fix-e{
+    padding: 15px 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.075);
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  .rdt-fix-1-e{
+    padding: 15px 20px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+  .rdt-p-e{
+    padding: 15px 20px;
+  }
+  
+  .rdt-menu-e,
+  .rdt-menu-e a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .rdt-menu-e a {
+    display: block;
+    white-space: nowrap;
+  }
+  
+  .rdt-menu-dropdown-e,
+  .rdt-menu-e input[type=checkbox] {
+    display: none;
+  }
+  
+  .rdt-menu-e label:hover {
+    cursor: pointer;
+  }
+
+  .rdt-menu-e > label {
+    padding-top: 0;
+  }
+
+  .menu-scroll-e{
+    overflow-y: auto;
+    height: 275px;
+  }
+  
+  /* narrow styles */
+  @media screen and (max-width: 1024px) {
+    .rdt-menu-e > ul,
+  .rdt-menu-righticon {
+      display: none;
+    }
+  
+    input[type=checkbox]:checked + ul {
+      display: block;
+      -webkit-animation: grow 0.5s ease-in-out;
+              animation: grow 0.5s ease-in-out;
+    }
+  }
+  /* large styles */
+  @media screen and (min-width: 1025px) {
+    .rdt-menu-e > label,
+  input[type=checkbox] {
+      display: none;
+    }
+  
+    .rdt-menu-e a {
+      padding: 15px 20px;
+    }
+  
+    .rdt-menu-e > ul > li {
+      display: inline-block;
+    }
+  
+    .rdt-menu-hasdropdown-e {
+      position: relative;
+    }
+    .rdt-menu-hasdropdown-e:hover > ul {
+      display: block;
+      -webkit-animation: grow 0.5s ease-in-out;
+              animation: grow 0.5s ease-in-out;
+    }
+  
+    .rdt-menu-hasdropdown-e > ul {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background: #035e8d;
+    }
+  
+    .rdt-menu-hasflyout-e > ul {
+      left: 100%;
+      top: 0;
+    }
+  
+    .rdt-menu-hasflyout-e .rdt-menu-downicon-e {
+      display: none;
+    }
+  }
+  /* look and feel only, not needed for core rdt-menu*/
+  @-webkit-keyframes grow {
+    0% {
+      display: none;
+      opacity: 0;
+    }
+    50% {
+      display: block;
+      opacity: 0.5;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes grow {
+    0% {
+      display: none;
+      opacity: 0;
+    }
+    50% {
+      display: block;
+      opacity: 0.5;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  html {
+    font-size: 100%;
+  }
+  
+  body {
+    font-family: "Lato";
+    line-height: 1.5;
+  }
+  
+  .rdt-menu-dropdown-e a {
+    padding: 15px 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  /* narrow  */
+  @media screen and (max-width: 1024px) {
+    .rdt-menu-e > label {
+      background: rgb(253 253 253 / 0%);
+      display: block;
+      padding: 15px 20px;
+      text-align: right;
+    }
+  
+    .rdt-menu-e a {
+      padding: 15px 20px;
+    }
+  
+    .rdt-menu-e > ul i {
+      float: right;
+      padding: 5px 10px;
+      background: #b1b1b1;
+    }
+  
+    .rdt-menu-dropdown-e a {
+      /* background: #f3f3f3; */
+      background-color: rgba(0, 0, 0, 0.1);
+    }
+  
+    .rdt-menu-dropdown-e a:hover {
+      background: #eeeeee;
+    }
+    
+    .rdt-menu-hasflyout-e > ul a {
+      background: #023d5b;
+    }
+  }
+  @media screen and (min-width: 1025px) {
+    .rdt-menu-e {
+      max-width: 1024px;
+      margin: 0 auto;
+    }
+  }
+
+  #sl-style-1::-webkit-scrollbar-track
+  {
+    border-radius: 10px;
+    background-color: #ff5700;
+  }
+  
+  #sl-style-1::-webkit-scrollbar
+  {
+    width: 8px;
+  }
+  
+  #sl-style-1::-webkit-scrollbar-thumb
+  {
+    border-radius: 10px;
+      -webkit-box-shadow: inset 0 0 6px rgb(0 0 0 / 0%);
+      background-color: #efefef;
+  }

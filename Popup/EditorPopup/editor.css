@@ -1,0 +1,29 @@
+.modal-pop-back{
+  position: relative;
+  width: 620px;
+  min-height: 245px;
+  height:auto;
+  background: #fff;
+  border: 1px solid #ccc;
+  margin: 0 auto;
+  margin-top: 15%;
+}
+.ReactModal__Overlay{
+  background-color: #584f4fc9 !important;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: all 500ms ease-in-out;
+}
+.ReactModal__Overlay--after-open {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.ReactModal__Overlay--before-close {
+  opacity: 0;
+  transform: translateY(0px);
+}
+
+.selected{
+background-color: #c5c5c5 !important;
+}
